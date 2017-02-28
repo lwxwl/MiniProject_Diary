@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lwxwl.justtry.LoginActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#eef1f1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/main_logo"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="@string/btn_login"
+            android:textColor="#27c5af"
+            android:textSize="18sp"
+            android:background="#eef1f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="@string/btn_sighup"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:background="#eef1f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        
+        <TextView
+            android:id="@+id/error"
+            android:text="@string/error"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="#884545"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="@string/hint1"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#888888"
+            android:drawableLeft="@mipmap/mail_box"
+            android:background="@drawable/bg_rectangle_with_stroke_dash"
+            />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint2"
+            android:inputType="textPassword"
+            android:textColorHint="#888888"
+            android:drawableLeft="@mipmap/lock"
+            android:background="@drawable/bg_rectangle_with_stroke_dash"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/layout2"
+        android:layout_alignLeft="@+id/layout2">
+
+        <CheckBox
+            android:id="@+id/checked"
+            style="@style/custom_checkbox"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_alignLeft="@+id/layout3"
+            android:layout_alignStart="@+id/layout3"
+            />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView"
+            android:text="@string/checked"
+            android:textColor="#884545"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_alignLeft="@+id/layout3"
+            android:layout_alignStart="@+id/layout3"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn3"
+        android:text="@string/btn_sighup"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="#27c5af"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout3"
+        android:layout_alignLeft="@+id/layout3"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>

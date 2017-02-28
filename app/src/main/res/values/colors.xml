@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="style_color_primary">#24a7a3</color>
+    <color name="style_color_primary_dark">#207771</color>
+    <color name="style_color_accent">#24a7a3</color>
+    <color name="fab_color_pressed">#207771</color>
+    <color name="fab_color_shadow">#888888</color>
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_light_pressed">#40ffffff</color>
+    <color name="btn_send_normal">#24a7a3</color>
+    <color name="btn_send_pressed">#207771</color>
+    <color name="btn_default_shadow">#99000000</color>
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="text_like_counter">#207771</color>
+    <color name="comments_background">#ffffff</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BaseDrawerActivity"
+    >
+
+    <item
+        android:id="@+id/drawer_login"
+        android:icon="@drawable/ic_perm_identity_white_24dp"
+        android:title="@string/drawer_login"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/drawer_user_information"
+        android:icon="@drawable/ic_book_white_24dp"
+        android:title="@string/drawer_user_information"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/drawer_photo"
+        android:icon="@drawable/ic_build_white_24dp"
+        android:title="@string/drawer_photo"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/drawer_help"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:title="@string/drawer_help"
+        app:showAsAction="ifRoom" />
+
+</menu>

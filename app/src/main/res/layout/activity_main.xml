@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lwxwl.justtry.BaseActivity">
+
+    <!-- 使用CoordinatorLayout作为主布局容器用以协调子view的布局 -->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!-- 以列表形式展示233 -->
+        <!-- 设置android:scrollbars="none"隐藏RecyclerView滚动条 -->
+        <!-- 设置app:layout_behavior属性使CoordinatorLayout包含的子视图中带有滚动属性的View -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/view_feed_toolbar" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- 设置app:borderWidth="0dp"，否则在4.1的sdk上FAB会显示正方形，在5.0以后无阴影效果 -->
+        <!-- app:elevation - 默认状态下FAB的阴影大小。-->
+        <!-- app:pressedTranslationZ - 点击时候FAB的阴影大小。 -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnCreate"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_edit_white_24dp"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

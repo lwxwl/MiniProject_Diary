@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="90"
+        android:endColor="#00000000"
+        android:startColor="#22000000" />
+
+</shape>
+
+<!-- 练习shape的使用，实现渐变效果，用android:angle来设置渐变角度。 -->
+<!-- android:angle="90" 从下到上来渲染。 -->
